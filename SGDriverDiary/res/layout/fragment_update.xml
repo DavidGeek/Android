@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     android:background="@drawable/layout_border"
+    tools:context="com.example.sgdriverdiary.Add$PlaceholderFragment" >
+
+	<LinearLayout
+        	android:id="@+id/linearLayout10"
+        	android:layout_width="298dp"
+        	android:layout_height="40dp"
+     	 	android:layout_marginTop="10dp"
+        	android:layout_gravity="center">
+
+		<TextView
+		    android:id="@+id/textView10"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="Enter date" />
+
+		<EditText
+		    android:id="@+id/editText10"
+		    android:layout_width="158dp"
+		    android:layout_height="wrap_content"
+		    android:ems="10" >
+
+		    <requestFocus />
+		</EditText>  
+ 	</LinearLayout>
+ 	
+	<LinearLayout
+        	android:id="@+id/linearLayout11"
+        	android:layout_width="298dp"
+        	android:layout_height="40dp"
+     	 	android:layout_marginTop="60dp"
+        	android:layout_gravity="center">
+
+		<TextView
+		    android:id="@+id/textView11"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="Enter mileage" />
+
+		<EditText
+		    android:id="@+id/editText11"
+		    android:layout_width="158dp"
+		    android:layout_height="wrap_content"
+		    android:ems="10" >
+
+		    <requestFocus />
+		</EditText>  
+ 	</LinearLayout>
+
+	<LinearLayout
+        	android:id="@+id/linearLayout12"
+        	android:layout_width="298dp"
+        	android:layout_height="40dp"
+     	 	android:layout_marginTop="110dp"
+        	android:layout_gravity="center">
+
+		<TextView
+		    android:id="@+id/textView12"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="Enter Kiosk" />
+
+		<EditText
+		    android:id="@+id/editText12"
+		    android:layout_width="158dp"
+		    android:layout_height="wrap_content"
+		    android:ems="10" >
+
+		    <requestFocus />
+		</EditText>  
+ 	</LinearLayout>
+
+	<LinearLayout
+        	android:id="@+id/linearLayout13"
+        	android:layout_width="298dp"
+        	android:layout_height="40dp"
+     	 	android:layout_marginTop="160dp"
+        	android:layout_gravity="center">
+
+		<TextView
+		    android:id="@+id/textView13"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="Enter petrol type" />
+
+		<EditText
+		    android:id="@+id/editText13"
+		    android:layout_width="158dp"
+		    android:layout_height="wrap_content"
+		    android:ems="10" >
+
+		    <requestFocus />
+		</EditText>  
+ 	</LinearLayout>
+ 	
+	<LinearLayout
+        	android:id="@+id/linearLayout14"
+        	android:layout_width="298dp"
+        	android:layout_height="40dp"
+     	 	android:layout_marginTop="210dp"
+        	android:layout_gravity="center">
+
+		<TextView
+		    android:id="@+id/textView14"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="Enter price per litre" />
+
+		<EditText
+		    android:id="@+id/editText14"
+		    android:layout_width="158dp"
+		    android:layout_height="wrap_content"
+		    android:ems="10" >
+
+		    <requestFocus />
+		</EditText>  
+ 	</LinearLayout>
+
+	<Button
+	    android:id="@+id/button2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/button1"
+	    android:layout_marginLeft="17dp"
+	    android:layout_toRightOf="@+id/button1"
+	    android:onClick="cancel"
+	    android:text="cancel" />
+
+	<Button
+	    android:id="@+id/button3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/button2"
+	    android:layout_alignBottom="@+id/button2"
+	    android:layout_alignParentRight="true"
+	    
+	    android:text="Update" 
+	     android:onClick="update"/>
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/linearLayout14"
+	    android:layout_below="@+id/linearLayout14"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginTop="24dp"
+	   
+	    android:text="delete" 
+	    android:onClick="delete"/>
+
+</RelativeLayout>
